@@ -1,0 +1,8 @@
+FROM system51075/toanpt3:mysql5.6new
+MAINTAINER Toanpt3 <toanpt3@vng.com.vn>
+ENV MYSQL_DATABASE=toan_db
+ENV MYSQL_USER=toan_usr
+ENV MYSQL_PASSWORD=123456X
+ENV MYSQL_ROOT_PASSWORD=123456X
+EXPOSE 22 3306
+CMD ["/usr/bin/supervisord"]

@@ -1,0 +1,12 @@
+nginx:
+  build: ./nginx
+  ports:
+    - "80:80"
+  volumes:
+    - /var/www/html:/home/360game/www/
+mysql:
+  build: ./mysql
+  ports:
+    - "3006:3006"
+  volumes:
+    - /var/www/mysql:/var/lib/mysql
